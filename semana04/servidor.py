@@ -14,7 +14,7 @@ class ClientThread(threading.Thread): #Cria a classe que herda de threading.Thre
             mensagem=self.csocket.recv(1024).decode()
             if not mensagem:
                 break
-            print("Recebu de ",self.enderecoCliente," a mensagem: ",mensagem)
+            print("Recebeu de ",self.enderecoCliente," a mensagem: ",mensagem)
             contadorMensagens+=1
             mensagemRetorno="Tudo ok pela {} vez".format(contadorMensagens)
             self.csocket.send(mensagemRetorno.encode())
