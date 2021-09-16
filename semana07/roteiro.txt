@@ -8,17 +8,17 @@ google-chrome --version && which google-chrome
 
 Verificar a versão a ser baixada do Chrome e do ChromeDriver
 https://chromedriver.storage.googleapis.com/index.html
-
+Ao verificar a versão, trocar na URL abaixo.
 cd/tmp/
-wget https://chromedriver.storage.googleapis.com/2.37/chromedriver_linux64.zip
+wget https://chromedriver.storage.googleapis.com/93.0.4577.15/chromedriver_linux64.zip
 unzip chromedriver_linux64.zip
 sudo mv chromedriver /usr/bin/chromedriver
 chromedriver --version
 
-Instalando as bibliotecas Python
+2. Instalando as bibliotecas Python
 
 Dentro do ambiente virtual
 
-sudo yum install python3-lxml
+sudo yum install python3-lxml --skip-broken
 
 python -m pip install selenium beautifulsoup4
